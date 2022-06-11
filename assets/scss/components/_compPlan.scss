@@ -1,0 +1,28 @@
+.our-comp-plan{
+   padding: 50px 0;
+   background: url(../images/homepage-image/backgrounds/comp-plan.png) no-repeat top center/cover;
+
+   .section-header{
+      font-family: 'CenturyGothic';
+      font-size: 70px;
+
+      @media screen and (max-width: 1199px){
+         font-size: 40px;
+      }
+   }
+
+   .text{
+      padding-top: 35px;
+      ul, ol{
+         li{
+            font-family: 'CenturyGothic';
+            font-size: 30px;
+            line-height: 1.3;
+
+            @media screen and (max-width: 991px){
+               font-size: 20px;
+            }
+         }
+      }
+   }
+}

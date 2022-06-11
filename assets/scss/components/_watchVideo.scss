@@ -1,0 +1,11 @@
+.watch-video{
+   .section-heading{
+      font-family: 'CenturyGothic';
+      font-size: 60px;
+      margin-top: -25px;
+
+      @media screen and (max-width: 1199px){
+         font-size: 35px;
+      }
+   }
+}

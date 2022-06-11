@@ -1,0 +1,8 @@
+.banner{
+   padding: 100px 0 200px;
+   background: url(../images/homepage-image/backgrounds/banner-bg.png) no-repeat bottom center/cover;
+
+   @media screen and (max-width: 991px){
+      padding: 50px 0 80px;
+   }
+}

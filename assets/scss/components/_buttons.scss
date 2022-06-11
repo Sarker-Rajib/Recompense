@@ -1,0 +1,19 @@
+.footer-button{
+   font-family: 'CenturyGothic';
+   font-size: 90px;
+   color: #fff;
+   background: linear-gradient( 0deg, rgb(3,108,142) 0%, rgb(5,59,94) 100%);
+   box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+   margin: 10px;  
+   padding: 10px;
+   transition: all 0.3s ease-in-out; 
+
+   @media screen and (max-width: 767px){
+      font-size: 40px;
+   } 
+
+   &:hover{
+      background: #fff;
+      color: #ee84f2;
+   }
+}

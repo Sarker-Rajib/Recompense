@@ -1,0 +1,53 @@
+.footer{
+   padding: 50px 0 0;
+   background: url(../images/homepage-image/backgrounds/footer-bg.png) no-repeat top center/cover;
+
+   .image-logo{
+      padding-top: 50px;
+
+      img{
+         width: 100%;
+         max-width: 510px;
+      }
+   }
+
+   .footer-nav{
+      padding: 50px 0;
+
+      p{
+         font-family: 'CenturyGothic';
+         font-size: 30px;
+
+         @media screen and (max-width: 991px){
+            font-size: 15px;
+         }
+
+         @media screen and (max-width: 1399px){
+            font-size: 20px;
+         }
+      }
+
+      .footer-links{
+         .nav-link{
+            font-family: 'CenturyGothic';
+            font-size: 30px;
+            color: #fff;
+            white-space: nowrap;
+
+            @media screen and (max-width: 991px){
+               font-size: 15px;
+               padding: 6px;
+            }
+
+            @media screen and (max-width: 1399px){
+               font-size: 20px;
+            }
+
+            &:hover{
+               background: #fff;
+               color: #ee84f2;
+            }
+         }
+      }
+   }
+}
