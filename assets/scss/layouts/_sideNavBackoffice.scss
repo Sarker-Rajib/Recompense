@@ -1,0 +1,39 @@
+.sideNav{
+   background: #340244;
+   position: fixed;
+   width: 300px;
+   height: 100%;
+
+   @media screen  and (max-width: 1199px){
+      width: 0px;
+      position: absolute;
+      overflow: hidden;
+   }
+
+   
+   // overflow-y: scroll;
+
+   .body-content{
+      ul{
+         padding-top: 25px;
+
+         li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+            font-weight: 500;
+            padding-bottom: 15px;
+
+            a{
+               display: block;
+               padding: 5px;
+               color: #ffffff;
+
+               &:hover{
+                  background: #ffffff;
+                  color: $color-lavender;
+               }
+            }
+         }
+      }
+   }
+}

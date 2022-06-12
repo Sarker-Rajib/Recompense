@@ -22,3 +22,42 @@
       }
    }
 }
+
+.backoffice-header{
+   background: #fff;
+   .brand-logo{
+      width: 100%;
+      max-width: 175px;
+
+      @media screen  and (max-width: 575px){
+         max-width: 100px;  
+      }
+   }
+
+   .heading{
+      font-family: 'TahomaBold';
+      font-size: 55px;
+      color: $color-text-ash;
+      font-style: italic;
+
+      @media screen  and (max-width: 1399px){
+         font-size: 35px;     
+      }
+
+      @media screen  and (max-width: 575px){
+         font-size: 20px;     
+      }
+   }
+
+   .profile-image{
+      width: 100%;
+      max-width: 100px;
+      @media screen  and (max-width: 1399px){
+         max-width: 90px;
+      }
+
+      @media screen  and (max-width: 575px){
+         max-width: 60px;  
+      }
+   }
+}

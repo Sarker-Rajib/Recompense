@@ -1,0 +1,18 @@
+.backoffice-video-section{
+   padding-bottom: 50px;
+   
+   h2{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      font-style: italic;
+      color: $color-text-ash;
+      text-align: center;
+      padding: 20px 0 40px;
+
+      @media screen  and (max-width: 1399px){
+         font-size: 30px;  
+         padding: 10px 0 25px;   
+      }
+   }
+}
