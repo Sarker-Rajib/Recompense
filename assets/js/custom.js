@@ -1,8 +1,12 @@
-let copyText = document.getElementById("link");
-let copyButton = document.getElementById("copyBtn")
-
-copyButton.addEventListener('click', function(e) {
-
-    navigator.clipboard.writeText(copyText.value);
-    alert("Copied the text: " + copyText.value);
-})
+// side nav toggle
+function sideNavToogle(){
+    const sideNav = document.querySelector('.sideNav');
+    const style = getComputedStyle(sideNav);
+    if(style.width == '0px'){
+        sideNav.style.width = '300px';
+        sideNav.style.overflow = 'auto';
+    }else {
+        sideNav.style.width = '0px';
+        sideNav.style.overflow = 'hidden';
+    }
+ }

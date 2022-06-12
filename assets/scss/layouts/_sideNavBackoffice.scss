@@ -1,17 +1,20 @@
 .sideNav{
    background: #340244;
-   position: fixed;
    width: 300px;
-   height: 100%;
+   height: 100vh;
+   padding-top: 93px;
+   overflow: auto;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   transition: all 0.1s linear;
 
    @media screen  and (max-width: 1199px){
-      width: 0px;
-      position: absolute;
+      position: fixed;
       overflow: hidden;
+      width: 0;
    }
 
-   
-   // overflow-y: scroll;
 
    .body-content{
       ul{
@@ -19,9 +22,14 @@
 
          li{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 26px;
-            font-weight: 500;
+            font-size: 22px;
+            font-weight: 400;
             padding-bottom: 15px;
+
+            @media (max-width: 1399px) {
+               font-size: 18px;
+               padding-bottom: 10px;
+            }
 
             a{
                display: block;
@@ -31,6 +39,10 @@
                &:hover{
                   background: #ffffff;
                   color: $color-lavender;
+
+                  img {
+                     filter: invert(1);
+                  }
                }
             }
          }

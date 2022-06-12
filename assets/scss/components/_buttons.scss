@@ -7,6 +7,8 @@
    margin: 10px;  
    padding: 10px;
    transition: all 0.3s ease-in-out; 
+   display: inline-block;
+   min-width: 300px;
 
    @media screen and (max-width: 767px){
       font-size: 40px;
@@ -21,14 +23,15 @@
 .btn-blue{
    font-family: Arial, Helvetica, sans-serif;
    font-weight: 500;
-   font-size: 30px;
+   font-size: 26px;
    color: #fff;
    background: #00a2ff;
    padding: 0 20px;
    margin-top: 5px;
+   border-radius: 0;
 
    @media screen  and (max-width: 1399px){
-      font-size: 25px;     
+      font-size: 20px;     
    }
 
    @media screen  and (max-width: 575px){
@@ -36,31 +39,38 @@
    }
 }
 
-.button-parent{
-   background: rgb(54,4,70);
-   background: linear-gradient(90deg, rgba(54,4,70,1) 0%, rgba(255,255,255,1) 50%, rgba(53,3,69,1) 100%);
-   padding: 5px;
-   display: flex;
-
-   @media screen  and (max-width: 991px){
-      padding: 3px;
-   }
+.button-groups{
+   .button-parent{
+      background: rgb(54,4,70);
+      background: linear-gradient(90deg, rgba(54,4,70,1) 0%, rgba(255,255,255,1) 50%, rgba(53,3,69,1) 100%);
+      padding: 5px;
    
-   .btn-transactions{
-      color: #580672;
-      background: #fff;
-      font-family: 'TahomaBold';
-      font-size: 30px;
-      border-radius: 0;
-      max-width: 380px;
-      padding: 0 10px;
-      
-      @media screen  and (max-width: 1399px){
-         font-size: 25px;     
-      }
-
       @media screen  and (max-width: 991px){
-         font-size: 15px;     
+         padding: 3px;
+      }
+      
+      .btn-transactions{
+         color: #580672;
+         background: #fff;
+         font-family: 'TahomaBold';
+         font-size: 24px;
+         border-radius: 0;
+         padding: 5px 10px;
+         width: 100%;
+         display: block;
+
+         &:hover{
+            background: linear-gradient(90deg, rgba(54,4,70,0.8) 0%, rgba(53,3,69,0.8) 100%);
+            color: #fff;
+         }
+         
+         @media screen  and (max-width: 1399px){
+            font-size: 20px;     
+         }
+   
+         @media screen  and (max-width: 991px){
+            font-size: 16px;     
+         }
       }
    }
 }
